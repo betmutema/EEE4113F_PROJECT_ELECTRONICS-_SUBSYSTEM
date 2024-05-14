@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #fff;
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        .body {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -40px;
+            bottom: -40px;
+            width: auto;
+            height: auto;
+            background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
+            background-size: cover;
+            -webkit-filter: blur(5px);
+            z-index: 0;
+        }
+
+        .grad {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -40px;
+            bottom: -40px;
+            width: auto;
+            height: auto;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+            z-index: 1;
+            opacity: 0.7;
+        }
+
+        .header {
+            position: absolute;
+            top: calc(50% - 75px); /* Adjust the top position */
+            left: calc(50% - 220px); /* Adjust the left position */
+            height: 150px; /* Set height to match .login height */
+            width: 100px; /* Adjust width of the header div */
+            z-index: 2;
+        }
+
+        .header img {
+            width: auto; /* Set width to auto to maintain aspect ratio */
+            height: 100%; /* Set height to 100% to span from start to end */
+        }
+
+        .login {
+            position: absolute;
+            top: calc(50% - 75px);
+            left: calc(50% - 50px);
+            height: 150px; /* Set height to define the space */
+            width: 350px;
+            padding: 10px;
+            z-index: 2;
+        }
+
+        .login input[type=text],
+        .login input[type=password],
+        .login input[type=button] {
+            width: 250px;
+            height: 30px;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.6);
+            border-radius: 2px;
+            color: #fff;
+            font-family: 'Exo', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 4px;
+        }
+
+        .login input[type=password] {
+            margin-top: 10px;
+        }
+
+        .login input[type=button] {
+            width: 260px;
+            height: 35px;
+            background: #fff;
+            border: 1px solid #fff;
+            cursor: pointer;
+            border-radius: 2px;
+            color: #a18d6c;
+            font-family: 'Exo', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 6px;
+            margin-top: 10px;
+        }
+
+        .login input[type=button]:hover {
+            opacity: 0.8;
+        }
+
+        .login input[type=button]:active {
+            opacity: 0.6;
+        }
+
+        .login input[type=text]:focus,
+        .login input[type=password]:focus {
+            outline: none;
+            border: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .login input[type=button]:focus {
+            outline: none;
+        }
+
+        ::-webkit-input-placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        ::-moz-input-placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+        
+        .footer-text {
+            position: absolute;
+            top: calc(50% + 110px);
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Exo', sans-serif;
+            font-size: 35px;
+            font-weight: 200;
+            z-index: 2;
+            padding-left: 45px; /* Adjust left padding for indentation */
+        }
+        
+        .green-text {
+            color: green; /* Set font color to green */
+        }
+        
+        .black-text {
+            color: black; /* Set font color to black */
+        }
+
+        .white-text {
+            color: white; /* Set font color to white */
+        }
+        
+        .member-login {
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 220px);
+            font-family: 'Exo', sans-serif;
+            font-size: 35px;
+            font-weight: 200;
+            z-index: 2;
+            padding-left: 120px; /* Adjust left padding for indentation */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+        <img src="https://www.acap.aq/images/stories/acap/Logos/FitzPatrick-Logo3.png" alt="Placeholder Image">
+    </div>
+    <br>
+    <div class="login">
+        <input type="text" placeholder="username" name="user"><br>
+        <input type="password" placeholder="password" name="password"><br>
+        <input type="button" value="Login">
+    </div>
+    <div class="footer-text">
+        <span class="green-text">Red-Wing </span><span class="black-text">Starlings </span><span class="white-text">Monitoring System</span>
+    </div>
+    <div class="member-login">
+        <span class="black-text">Member</span><span class="green-text">Login</span>
+    </div>
+</body>
+
+</html>
